@@ -7,7 +7,7 @@ Date: 2016
 
 <?php
 
-$ini_file = '/etc/config/cotd.properties';  
+$ini_file = './etc/config/cotd.properties';  
 
 $dbv2 = getenv('OPENSHIFT_MYSQL_DB_HOST');
 $dbv3 = getenv('DBHOST');
