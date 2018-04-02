@@ -13,7 +13,8 @@ node {
   checkout scm
 
   stage 'Build image'
-  sh("docker build -t ${imageTag} .")
+    sh("cat ./etc/config/cotd.properties")
+    sh("docker build -t ${imageTag} .")
   
   stage 'Deploy Application'
     switch (env.BRANCH_NAME) {  
