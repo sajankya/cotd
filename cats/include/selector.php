@@ -7,7 +7,7 @@ Date: 2016
 
 <?php
 
-$ini_file = './etc/config/cotd.properties';  
+$ini_file = '/etc/config/cotd.properties';  
 
 $dbv2 = getenv('OPENSHIFT_MYSQL_DB_HOST');
 $dbv3 = getenv('DBHOST');
@@ -39,22 +39,7 @@ if ( empty($dbhost) ) {
     $_SESSION['DB'] = 'true';
 }
 
-$selector = getenv('SELECTOR');
-// if theme not set by client then determine active theme default to pets
-if ( empty($_SESSION['SELECTOR']) ) { 
-
-    if ( !empty($selector) ) {
-        $_SESSION['SELECTOR'] = getenv('SELECTOR');
-    } elseif ( file_exists($ini_file) ) {
-        $ini_array = parse_ini_file($ini_file);     
-        $_SESSION['SELECTOR'] = $ini_array['selector'];
-    } elseif ( $_SESSION['V2'] == 'true' )  {
-        $_SESSION['SELECTOR'] = 'pets';
-    } else {
-        $_SESSION['SELECTOR'] = 'pets';
-    }
-
-}                                     
+$_SESSION['SELECTOR'] = 'cats';
 
 if ( !empty($_SESSION['service']) ) {
     $service = $_SESSION['service'];
