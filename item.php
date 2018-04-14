@@ -163,7 +163,7 @@ cache: false
 
 
 
-    <div data-role="footer" style="background-color: #E8E8E8;" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
 
 		<div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
         	<a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
