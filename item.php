@@ -164,31 +164,29 @@ cache: false
 
 
     <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-tap-toggle="false">
-
-		<div data-role="controlgroup" class="control ui-btn-left" data-type="horizontal" data-mini="true">
-        	<a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
-        	<a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
-        </div>
-
-		<div data-role="none" class="ui-content" style="text-align:center;" data-mini="true" data-inline="true" style="width: 100px;">
-			
+		<div class="ui-content" style="background: transaparent !important; text-align:center;" data-mini="true" data-inline="true" style="width: 100px;">			
 			<div class="rate-example" >
 				<input data-role="none" name="ratetest" id="ratetest" type="text" data-mini="true" style="text-align:center; outline:none; border:0; broder-style:none; border-color: transparent !important; border:none!important; box-shadow:none!important;"/>
+			</div>
+		</div>
+
+
+		<div data-role="content"
+		     style="height: 35px; background-color: #E8E8E8; background-repeat: no-repeat;"	   
 		    </div>
 
-        </div>
-
-	        <div data-role="content"
-		     style="height: 50px; background-color: #E8E8E8; background-repeat: no-repeat;"	   
-		</div>
-	    
-		<div style="text-align:center;" class="control save-btn ui-btn-center" data-inline="true" >
-		<a href="#" class="save" data-inline="true"  data-icon="check" data-iconpos="left" data-role="button" data-theme="d" data-mini="true">Save</a>
-		<a href="#" class="cancel" data-inline="true"  data-icon="delete" data-iconpos="left" data-role="button" data-theme="d" data-mini="true">Cancel</a>
-		</div>
+			<div  class="control ui-btn-left" data-type="horizontal" data-mini="true" style="bottom: 10px;">
+        		<a href="#" class="prev" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="d">Previous</a>
+        		<a href="#" class="next" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="d">Next</a>
+        	</div>
 
 
-		<a href="#trivia" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">About</a>
+			<div style="text-align:center; bottom: 20px;" class="control save-btn ui-btn-center" data-inline="true" >
+				<a href="#" class="save" data-inline="true"  data-icon="check" data-iconpos="left" data-role="button" data-theme="d" data-mini="true">Save</a>
+				<a href="#" class="cancel" data-inline="true"  data-icon="delete" data-iconpos="left" data-role="button" data-theme="d" data-mini="true">Cancel</a>
+			</div>
+			<a href="#trivia" data-rel="popup" class="trivia-btn ui-btn-right" data-role="button" data-icon="info" data-iconpos="left" data-theme="d" data-mini="true">About</a>
+
     </div><!-- /footer -->
 
 </div><!-- /page -->
