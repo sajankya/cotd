@@ -1,5 +1,4 @@
 node {
-  sh("hostname")
   sh("whoami")
   sh("docker version")
   sh("kubectl version")
